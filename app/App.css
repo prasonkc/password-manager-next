@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+/* Background */
+
+body {
+  @apply bg-slate-950 relative min-h-screen overflow-hidden;
+  font-family: "Inter", "Sans-serif";
+}
