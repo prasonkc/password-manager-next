@@ -1,4 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+A simple and secure password manager built with **Next.js (App Router)** and **MongoDB**, allowing users to store, view, and delete credentials for different websites.
+
+---
+
+## Features
+
+- **Add Credentials**: Save website URLs, usernames, and passwords.
+- **View Credentials**: List all saved entries.
+- **Delete Credentials**: Remove entries easily.
+- **MongoDB Backend**: Data stored securely in MongoDB.
+- **Next.js App Router API**: Clean, modular API structure.
+
+---
+
+## Tech Stack
+
+- **Frontend**: Next.js 13 (App Router), React  
+- **Backend**: Next.js API Routes  
+- **Database**: MongoDB (Atlas or local)  
+- **Styling**: Tailwind CSS
 
 ## Getting Started
 
