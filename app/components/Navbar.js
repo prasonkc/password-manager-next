@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 // Icon import
 import { Menu, X } from "lucide-react";
