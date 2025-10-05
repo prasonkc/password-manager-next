@@ -3,7 +3,7 @@ import UserData from "@/models/datamodel";
 
 export async function POST(req) {
   try {
-    const body = await req.json(); // parse JSON body
+    const body = await req.json();
     const { URL, userName, password } = body;
 
     if (!URL || !userName || !password) {
