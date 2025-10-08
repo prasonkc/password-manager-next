@@ -18,6 +18,7 @@ export default function ClientApp() {
 
   return (
     <BrowserRouter>
+      {/* Desktop layout */}
       <Navbar />
       <div className="hidden md:flex">
         <div className="flex-col">
@@ -27,21 +28,24 @@ export default function ClientApp() {
         <Display items={items} setItems={setItems} />
       </div>
 
-      <Routes>
-        <Route
-          path="/"
-          element={<Manager items={items} setItems={setItems} />}
-        />
-        <Route
-          path="/password-manager"
-          element={<Manager items={items} setItems={setItems} />}
-        />
-        <Route
-          path="/password-display"
-          element={<Display items={items} setItems={setItems} />}
-        />
-        <Route path="/password-generator" element={<PasswordGen />} />
-      </Routes>
+      {/* Mobile layout */}
+      <div className="flex flex-col md:hidden">
+        <Routes>
+          <Route
+            path="/"
+            element={<Manager items={items} setItems={setItems} />}
+          />
+          <Route
+            path="/password-manager"
+            element={<Manager items={items} setItems={setItems} />}
+          />
+          <Route
+            path="/password-display"
+            element={<Display items={items} setItems={setItems} />}
+          />
+          <Route path="/password-generator" element={<PasswordGen />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
